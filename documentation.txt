@@ -1,0 +1,11 @@
+Start-up
+1)install nodejs
+2)Voer volgende code uit in opdrachtpropmp "npm install npm -g" en "npm install -g typescript"
+3)nu hebben we alle tools 
+
+work space
+1)volg instructie op angularjs website of download van "https://github.com/mschwarzmueller/angular-2-beta-boilerplate"
+2)Navigeer naar de folder met je opdrachtpromp en voer volgende intructie uit "npm install"
+
+start aplikatie 
+1) voer "npm start" comand uit. 
