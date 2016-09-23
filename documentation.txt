@@ -9,3 +9,36 @@ work space
 
 start aplikatie 
 1) voer "npm start" comand uit. 
+
+
+Angular2 inleiding
+
+Angular2 is een freamwork voor het maken van applicaties. Freamwork is een en karkas die het
+ontwikelen van een een aplicatie versnelt die in zie all verschilende servises heeft en objecten.
+Het vergelijkbaar met bibliotheken zo als Jquery. Maar freamwork heeft in zich bepalde struktuur en orde hoe aplicaite word geschreven.
+
+wat is nieuw in angular2?
+alles draaid rond Componenten. Componeneten zijn soort van Derectiven die jouw toelaat om dom elementen in te gebruiken.
+In vervolg kiezen we wat de component doet en hoe hij er uitzit.
+heel de code word geschreven in de componenten.
+
+angular2 kunnen we gebreuken met verschilende programmer talen.
+1) javascript es5 of es6, waar van es6 is de latste versie waar verschilende nieuwe elemeten zijn toegevoegd
+zo als classen, moddelen, nieuwe functies ect.
+javascript is niet het beste keuze om met angular 2 te gebruiken
+2)goole Darts, lijkt op javascript maar is toch anders
+3)typescript ontwikeld door microsoft
+
+typescript is javascript maar voegt veel nieuwe dingens toe uit zich zelf en onderstuind ook oudere versies van ecmascript.
+
+angular2 is zelf geschreven in typescript en meste documentatie is daar ook in terug te vinden.
+
+beste keuze voor angular2 te programmern is in typescript die ga ik ook gebreuken.
+
+angular2 gebreuk veel nieuwe dingens van ecmascript 6 maar vornamelijk zijn dat classes. 
+classes van typescript zijn betje anders dan de classen van javascript. Typescript voegd functies die pas in latere versie van javascript worden toegevoegd.
+Een van de kenmerken van typescript is dat die type van variabele initialiseerd bv. dtring, number, boolean.
+
+
+Er is een klijn probleem met gebruiken van typescript, Brouwsets kunnen die niet interpreteren.
+er is wel een oplossing et zijn toels die typescript kunnen vertallen naar javascript. zo dat we die in brouser zouden kunnen gebruiken.
