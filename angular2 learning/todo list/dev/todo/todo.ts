@@ -1,9 +1,9 @@
 export class Todo{
     titel:string;
-    don:boolean;
+    done:boolean;
 
     constructor(title:string){
         this.titel=title;
-        this.don = false;
+        this.done = false;
     }
 }
