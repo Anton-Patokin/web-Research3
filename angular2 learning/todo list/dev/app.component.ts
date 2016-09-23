@@ -1,9 +1,13 @@
 import {Component} from 'angular2/core';
+import {TodoListComponent} from "./todo-list.component";
+
+
 
 @Component({
     selector: 'todo-app',
     templateUrl:'./app/app.component.html',
-    styleUrls:['./app/app.component.css']
+    styleUrls:['./app/app.component.css'],
+    directives:[TodoListComponent],
 })
 export class AppComponent {
     titel: string;
@@ -17,8 +21,6 @@ export class AppComponent {
         let title= input.value;
         input.value ="";
         this.todos.push(title);
-
-        );
     }
 
 }
