@@ -1,6 +1,7 @@
 import {Component} from 'angular2/core';
 import {TodoListComponent} from "./todo-list.component";
 import {Todo} from "./todo/todo";
+import {TodoFormComponent} from "./todo/todo-form.component";
 
 
 
@@ -8,7 +9,7 @@ import {Todo} from "./todo/todo";
     selector: 'todo-app',
     templateUrl:'./app/app.component.html',
     styleUrls:['./app/app.component.css'],
-    directives:[TodoListComponent],
+    directives:[TodoListComponent, TodoFormComponent],
 })
 export class AppComponent {
     titel: string;
@@ -18,10 +19,9 @@ export class AppComponent {
         this.titel ="Angular2 2Do";
         this.todos =[];
     }
-    addTodo(input:HTMLInputElement){
-        let title= input.value;
-        input.value ="";
-        this.todos.push( new Todo(title));
+    onTodoAdded(todo:Todo){
+
+        this.todos.push( todo);
     }
 
 }
