@@ -3,8 +3,8 @@ import {Todo} from "./todo";
 
 @Component({
     selector: 'todo-item',
-    templateUrl: '../../app/dev/todo-item/todo-item.component.html',
-    styleUrls:['../../app/dev/todo-item/todo-item.component.css'],
+    templateUrl: './app/todo/todo-item.component.html',
+    styleUrls:['./app/todo/todo-item.component.css'],
 
 
 })
