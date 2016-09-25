@@ -1,31 +1,27 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import {Todo, ITodo} from '../../shared/todo.model';
+import { ITodo } from '../../shared/todo.model';
 import { TodoItemComponent } from '../todo-item/todo-item.component';
-import {TodoService} from "../../shared/todo.service";
-import {todos} from "../../shared/todo.data";
+import { TodoService } from '../../shared/todo.service';
 
 @Component({
     selector: 'todo-list',
     templateUrl: './app/components/todo-list/todo-list.component.html',
     styleUrls: ['./app/components/todo-list/todo-list.component.css'],
-    directives: [TodoItemComponent],
-
+    directives: [TodoItemComponent]
 })
-export class TodoListComponent implements OnInit{
+export class TodoListComponent implements OnInit {
     todos: ITodo[];
 
-
-    constructor(private TodoService:TodoService){
-        this.todos=[];
-
-    }
-    ngOnInit(){
-        this.TodoService.getTodos().then(todos=>this.todos=todos);
-
+    constructor(private todoService: TodoService) {
+        this.todos = [];
     }
 
-    get sortedTodos():ITodo[] {
+    ngOnInit() {
+        this.todoService.getTodos().then(todos => this.todos = todos);
+    }
+
+    get sortedTodos(): ITodo[] {
         return this.todos
         .map(todo => todo)
         .sort((a, b) => {
@@ -40,7 +36,7 @@ export class TodoListComponent implements OnInit{
         });
     }
 
-    onTodoDeleted(todo: ITodo):void {
-        this.TodoService.deleteTodo(todo);
+    onTodoDeleted(todo: ITodo): void {
+        this.todoService.deleteTodo(todo).then(todo => console.log(todo));
     }
 }
