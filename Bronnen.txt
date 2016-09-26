@@ -1,3 +1,10 @@
 Videos
 channel -> Mindspace
 https://www.youtube.com/watch?v=d6Dp4Dyeke8&list=PL55RiY5tL51olfU2IEqr455EYLkrhmh3n
+channel -> CodeDojo in het russisch 
+https://www.youtube.com/watch?v=P5fmY09_0es&list=PLqHlAwsJRxANDZPGvgX4DQCtN1TTUCUxx&index=9
+
+
+Website
+Angular
+https://angular.io/docs/ts/latest/
