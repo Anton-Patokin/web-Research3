@@ -1,3 +1,5 @@
+
+
 Start-up
 1)install nodejs
 2)Voer volgende code uit in opdrachtpropmp "npm install npm -g" en "npm install -g typescript"
