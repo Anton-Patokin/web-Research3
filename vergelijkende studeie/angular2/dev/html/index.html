@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h1>Jquery syntax</h1></div>
+        <div class="panel-body">
+            <div class="col-md-6">
+                <h1>Code</h1>
+                <p>
+
+                </p>
+
+
+            </div>
+            <div class="col-md-6">
+                <h1>Result</h1>
+                <div>{{my_number.name}}</div>
+                <input id="input" [(ngModel)]="my_number.name"/>
+
+                <button id="button" (click)="add_watchers()">Voeg elementen bij</button>
+                <!--<div id="element" *ngFor='let name of names[0]'>-->
+                <!--{{name}}-->
+                <!--</div>-->
+                <div *ngFor='#name of names'>
+                    <input  [(ngModel)]="name.name"/>
+                    {{name.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
